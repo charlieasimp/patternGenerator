@@ -24,14 +24,24 @@ int count = 0;
 int numHolder = 1;
 String stringHolder = "";
     do {
-    System.out.println();
+    
+    if(numHolder == 1){
+        System.out.println(numHolder + stringHolder);
+     } 
+    else 
+    {
+        System.out.println((numHolder + stringHolder) + numHolder);
+    }
 
-    numHolder += 1;
+    count++;
+    numHolder = count + 1;
+
+    
 }while(count < rows);
 
 }
 
 public static void main (String args[]){
-    stars(7);
+    triangle(6);
 
 }
