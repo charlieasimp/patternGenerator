@@ -23,21 +23,15 @@ public static void triangle(int rows){
 int count = 0;
 int numHolder = 1;
 String stringHolder = "";
-    do {
-    
-    if(numHolder == 1){
-        System.out.println(numHolder + stringHolder);
-     } 
-    else 
+int numIteration = 0;
+    while (count < rows);
     {
-        System.out.println((numHolder + stringHolder) + numHolder);
+        System.out.println(numHolder + stringHolder);
+        if (numHolder > 1 && stringHolder.length() < count)
+        {
+
+        }
     }
-
-    count++;
-    numHolder = count + 1;
-
-    
-}while(count < rows);
 
 }
 
