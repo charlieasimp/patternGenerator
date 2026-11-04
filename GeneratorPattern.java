@@ -23,19 +23,30 @@ public static void triangle(int rows){
 int count = 0;
 int numHolder = 1;
 String stringHolder = "";
-int numIteration = 0;
-    while (count < rows);
-    {
-        System.out.println(numHolder + stringHolder);
-        if (numHolder > 1 && stringHolder.length() < count)
+    while (count < rows)
+{
+        while (stringHolder.length() < numHolder)
         {
-
+            stringHolder += numHolder;
         }
-    }
+System.out.println(stringHolder);
+count++;
+stringHolder = "";
+numHolder++;
+}
 
 }
 
+public static void odds(int start)
+{
+
+}
+
+
+
 public static void main (String args[]){
-    triangle(6);
+    stars(5);
+    triangle(5);
+    
 
 }
