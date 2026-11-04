@@ -39,7 +39,10 @@ numHolder++;
 
 public static void odds(int start)
 {
-
+for (i = 0; i < start; i++)
+{
+    if ()
+}
 }
 
 
