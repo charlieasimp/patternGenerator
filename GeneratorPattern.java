@@ -39,9 +39,24 @@ numHolder++;
 
 public static void odds(int start)
 {
-for (i = 0; i < start; i++)
+String stringing = "";
+int numberHolder = start;
+if (start % 2 == 0)
 {
-    if ()
+    start -= 1;
+    numberHolder = start;
+}
+    for (int i = 0; i < start; start-=2)
+    {
+        for (int i = 1; i < numberHolder; i++)
+        {
+            
+        }
+        
+            System.out.println();
+    }
+{
+
 }
 }
 
