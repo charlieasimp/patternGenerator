@@ -44,16 +44,18 @@ int numberHolder = start;
 if (start % 2 == 0)
 {
     start -= 1;
-    numberHolder = start;
 }
-    for (int i = 0; i < start; start-=2)
+    for (int i = 0; i < start;)
     {
-        for (int i = 1; i < numberHolder; i++)
-        {
-            
-        }
+        for (int counts = 0; counts < numberHolder; counts++)
+            {
+                numberHolder = start;
+                stringing += numberHolder;
+            }
         
-            System.out.println();
+            System.out.println(stringing);
+            stringing = "";
+            start -= 2;
     }
 {
 
@@ -63,8 +65,8 @@ if (start % 2 == 0)
 
 
 public static void main (String args[]){
-    stars(5);
-    triangle(5);
+    
+    odds(10);
     
 
 }
