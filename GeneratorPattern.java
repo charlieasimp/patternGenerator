@@ -62,6 +62,20 @@ if (start % 2 == 0)
 }
 }
 
+public static void eo(int maxE)
+{
+String stringEHolder = "";
+String stringOHolder = "";
+int eoCounter = 0;
+int eoHolder = maxE;
+
+    while (eoCounter < maxE)
+    {
+        
+    }
+
+}
+
 
 
 public static void main (String args[]){
