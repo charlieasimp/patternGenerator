@@ -20,17 +20,17 @@ String asterHolder = "*";
 }
 
 public static void triangle(int rows){
-int count = 0;
+int counting = 0;
 int numHolder = 1;
 String stringHolder = "";
-    while (count < rows)
+    while (counting < rows)
 {
         while (stringHolder.length() < numHolder)
         {
             stringHolder += numHolder;
         }
 System.out.println(stringHolder);
-count++;
+counting++;
 stringHolder = "";
 numHolder++;
 }
@@ -64,15 +64,26 @@ if (start % 2 == 0)
 
 public static void eo(int maxE)
 {
-String stringEHolder = "";
-String stringOHolder = "";
-int eoCounter = 0;
-int eoHolder = maxE;
-
-    while (eoCounter < maxE)
+String output = "";
+int counter = 0;
+int eHolder = 0;
+if (maxE % 2 == 0)
+{
+    output = "O";    
+}
+   
+while (counter < maxE)
+{
+    
+    while (output.length() < maxE)
     {
-        
+
     }
+}
+
+
+
+        
 
 }
 
