@@ -89,9 +89,34 @@ while (counter < maxE)
 
 
 
+public static void pyramid(int rows)
+{
+int countering = 0;
+int temp = 1;
+    while (countering < rows)
+    {
+        String numHoldering = "";
+        int number = temp;
+        int spaces = 0;
+        while (spaces < temp - 1)
+        {
+            numHoldering += " ";
+            spaces++;
+        }
+        while (numHoldering.length() < ((temp - 1) + (2 * (rows - temp) + 1)))
+        {
+            numHoldering += number;
+        }
+        System.out.println(numHoldering);
+        countering++;
+        temp++;
+        
+    }
+}
+
 public static void main (String args[]){
     
-    odds(10);
+    pyramid(5);
     
 
 }
