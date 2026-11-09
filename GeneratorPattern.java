@@ -64,28 +64,39 @@ if (start % 2 == 0)
 
 public static void eo(int maxE)
 {
-String output = "";
-int counter = 0;
-int eHolder = 0;
-if (maxE % 2 == 0)
+int upN = maxE;
+int downN = maxE;
+String letterOutput = "";
+
+for (int x = 1; x <= maxE; x++)
 {
-    output = "O";    
-}
-   
-while (counter < maxE)
-{
-    
-    while (output.length() < maxE)
+    if (upN % 2 == 0)
     {
-
+        letterOutput = "O";
     }
+    else 
+    {
+        letterOutput = "E";
+    }
+    upN--;
+    System.out.println(letterOutput.repeat(x));
+}
+for (int y = maxE - 1; y >= 1; y--)
+{
+    if (downN % 2 == 0)
+    {
+        letterOutput = "O";
+    }
+    else
+    {
+        letterOutput = "E";
+    }
+    downN--;
+    System.out.println(letterOutput.repeat(y));
 }
 
-
-
-        
-
 }
+
 
 
 
@@ -116,7 +127,7 @@ int temp = 1;
 
 public static void main (String args[]){
     
-    pyramid(5);
+    eo(6);
     
 
 }
