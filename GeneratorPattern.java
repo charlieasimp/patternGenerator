@@ -4,7 +4,7 @@
 
 
 //  Pre-condition: row input must be greater than 0
-//  Post-condition: input is the amount of rows that will print and each row
+//  Post-condition: output is the amount of rows that was inputted and will print and each row
 // is asterisks increasing by 2 each time, with a half pyramid shape.
 
 public static void stars (int rows){
@@ -18,6 +18,10 @@ String asterHolder = "*";
         count ++;
     }
 }
+
+//  Pre-condition: row input must be greater than 0
+//  Post-condition: output is the amount of rows that was inputted will print and each row
+// is numbers increasing by 1 each time, with a half pyramid shape.
 
 public static void triangle(int rows){
 int counting = 0;
@@ -37,6 +41,10 @@ numHolder++;
 
 }
 
+
+//  Pre-condition: row input must be greater than 0
+//  Post-condition: output is the starting number that was inputted will print and each row
+// is the numner decreasing by 2 each time, with a half pyramid shape. printing the number the amount of times corresponding to the number that is in the row.
 public static void odds(int start)
 {
 String stringing = "";
@@ -62,6 +70,10 @@ if (start % 2 == 0)
 }
 }
 
+//  Pre-condition: row input must be greater than 0
+//  Post-condition: output is the maximum number of E's that will show 
+// with the increasing and decreasing pattern of interchanging E's and O's.
+
 public static void eo(int maxE)
 {
 int upN = maxE;
@@ -83,14 +95,13 @@ for (int x = 1; x <= maxE; x++)
 }
 for (int y = maxE - 1; y >= 1; y--)
 {
-    if (downN % 2 == 0)
-    {
+    if(letterOutput.equals("O")){
+    letterOutput = "E";}
+    else
+   {
         letterOutput = "O";
     }
-    else
-    {
-        letterOutput = "E";
-    }
+    
     downN--;
     System.out.println(letterOutput.repeat(y));
 }
@@ -127,7 +138,7 @@ int temp = 1;
 
 public static void main (String args[]){
     
-    eo(6);
+    eo(5);
     
 
 }
